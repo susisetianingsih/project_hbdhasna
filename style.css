@@ -20,6 +20,19 @@ body {
   text-align: center;
 }
 
+.music {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.audio {
+  width: 30%;
+  outline: none;
+  opacity: 0.5;
+}
+
 .container.wish h1 {
   font-size: 40px;
   font-weight: 200;

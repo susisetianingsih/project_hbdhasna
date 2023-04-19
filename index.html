@@ -15,16 +15,22 @@
 
 <body>
     <!-- <section></section> -->
-    <audio autoplay>
-        <source src="neverland.mp3" type="audio/mpeg" />
-    </audio>
+
     <canvas id="my-canvas"></canvas>
+
     <div class="container">
+
         <div class="col-9 wish">
             <h1><span class="auto-type"></h1>
             <img id="moon" src="gambar/moon.png">
 
         </div>
+    </div>
+
+    <div class="music">
+        <audio class="audio" controls>
+            <source src="neverland.mp3" type="audio/mpeg" />
+        </audio>
     </div>
 
     <script type=" text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -37,14 +43,14 @@
         });
     </script> -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="index.min.js"></script>
 
     <script>
         var confettiSettings = { target: 'my-canvas' };
         var confetti = new ConfettiGenerator(confettiSettings);
-        setTimeout(() => confetti.render(), 82000);
+        setTimeout(() => confetti.render(), 85000);
     </script>
     <script>
         var typed = new Typed(".auto-type", {
@@ -55,12 +61,13 @@
                 "Tapi, ada yang kurang gak si",
                 "Menurutmu apaa hayoo?",
                 "Kalo kata gw si banyak yaa ehhehe",
-                "Btw mau lihat magic gak?",
+                "Btw mau lihat sulap gak?",
                 "Mauu yaa please...",
                 "Yuk ucapkan Magical Words bersama and...",
                 "See what miracle will come",
                 "Kamu harus mau pokoknya",
                 "Hehehe",
+                "Bismillah duluu",
                 "Let's count down from...",
                 "3",
                 "2",
@@ -85,9 +92,7 @@
                 "Jika itu buruk kamu bisa jadikan itu pelajaran",
                 "Mungkin mereka belum tau kamu aja",
                 "Jangan terlalu dipikirkan yahh",
-                "Kamu punya kendali penuh atas dirimu",
                 "So, don't wasting your time",
-                "Buat memikirkan hal-hal yang ga bermanfaat untukmu",
                 "Terima kasih telah menerimaku jadi sahabatmu ^^",
                 "Wish You All The Best"
             ],
@@ -97,7 +102,7 @@
         });
         var moon = document.getElementById('moon');
         moon.style.display = "none";
-        setTimeout(() => moon.style.display = "block", 82000);
+        setTimeout(() => moon.style.display = "block", 85000);
 
     </script>
 </body>
