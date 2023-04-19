@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#2b1005, #7597de);
+  background-image: url("gambar/bgi.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container.wish h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  object-fit: cover;
+  width: 200px;
+}
+
+/* Dekstop version */
+@media (min-width: 992px) {
+  .wish h1 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+}

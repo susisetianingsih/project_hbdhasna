@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>HBD Hasna</title>
+</head>
+
+<body>
+    <!-- <section></section> -->
+    <canvas id="my-canvas"></canvas>
+    <div class="container">
+        <div class="col-9 wish">
+            <h1><span class="auto-type"></h1>
+            <img id="moon" src="gambar/moon.png">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="jquery.fireworks.js"></script>
+    <script>
+        $('section').fireworks({
+            opacity: 0.9,
+            width: '100%',
+            height: '100%'
+        });
+    </script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="index.min.js"></script>
+
+    <script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        setTimeout(() => confetti.render(), 82000);
+    </script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [
+                "Halo Hasna!",
+                "Malam ini sungguh indah ya",
+                "Malam yang gelap dengan gemerlap bintang",
+                "Tapi, ada yang kurang gak si",
+                "Menurutmu apaa hayoo?",
+                "Kalo kata gw si banyak yaa ehhehe",
+                "Btw mau lihat magic gak?",
+                "Mauu yaa please...",
+                "Yuk ucapkan Magical Words bersama and...",
+                "See what miracle will come",
+                "Kamu harus mau pokoknya",
+                "Hehehe",
+                "Let's count down from...",
+                "3",
+                "2",
+                "1",
+                "HAPPY BIRTDAY!!",
+                "Akhirnya malam ini begitu lengkap ya",
+                "Ada bintang",
+                "Ada bulan",
+                "Dan ada KAMU yang ULANG TAHUN, yuhuuu",
+                "Barakallah fii umrik ya Hasnaa!!",
+                "Semoga panjang umur",
+                "Sehat selalu",
+                "Dan semoga dilancarkan segala urusannya ya cantik",
+                "Aamiin",
+                "Aku mau bilang satu hal lagi",
+                "Kamu itu unik lhoo",
+                "Jadi kurangilah rasa insecure mu yahh xixi",
+                "Apapun yang orang lain katakan tentangmu",
+                "Baik itu buruk ataupun baik",
+                "Terima saja ya",
+                "Jika itu baik ya alhamdulillah",
+                "Jika itu buruk kamu bisa jadikan itu pelajaran",
+                "Mungkin mereka belum tau kamu yang sebenarnya",
+                "Jangan terlalu dipikirkan yahh",
+                "Kamu punya kendali penuh atas dirimu",
+                "So, don't wasting your time",
+                "Buat memikirkan hal-hal yang ga bermanfaat untukmu",
+                "Terima kasih telah menerimaku jadi sahabatmu ^^",
+                "Wish You All The Best"
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: false,
+        });
+        var moon = document.getElementById('moon');
+        moon.style.display = "none";
+        setTimeout(() => moon.style.display = "block", 82000);
+
+    </script>
+</body>
+
+</html>
